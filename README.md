@@ -72,3 +72,21 @@ OOPs, are based on a bottom-up approach, unlike the Structural programming parad
 Polymorphism offers a lot of flexibility in OOPs.
 
 8. Why is OOPs so popular?
+
+OOPs programming paradigm is considered as a better style of programming. Not only it helps in writing a complex piece of code easily, but it also allows users to handle and maintain them easily as well. Not only that, the main pillar of OOPs - Data Abstraction, Encapsulation, Inheritance, and Polymorphism, makes it easy for programmers to solve complex scenarios. As a result of these, OOPs is so popular.
+
+Advanced OOPs Interview Questions
+
+9. What is a class?
+
+A class can be understood as a template or a blueprint, which contains some values, known as member data or member, and some set of rules, known as behaviors or functions. So when an object is created, it automatically takes the data and functions that are defined in the class.
+Therefore the class is basically a template or blueprint for objects. Also one can create as many objects as they want based on a class.
+
+For example, first, a car’s template is created. Then multiple units of car are created based on that template.
+
+10. What is an object?
+
+An object refers to the instance of the class, which contains the instance of the members and behaviors defined in the class template. In the real world, an object is an actual entity to which a user interacts, whereas class is just the blueprint for that object. So the objects consume space and have some characteristic behavior.
+For example, a specific car.
+
+11. What is encapsulation?
