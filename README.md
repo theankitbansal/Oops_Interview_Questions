@@ -284,3 +284,37 @@ Let me explain to you with a common example. Let's take three different vehicles
 Yes, with more powers comes more complications. Inheritance is a very powerful feature in OOPs, but it has some limitations too. Inheritance needs more time to process, as it needs to navigate through multiple classes for its implementation. Also, the classes involved in Inheritance - the base class and the child class, are very tightly coupled together. So if one needs to make some changes, they might need to do nested changes in both classes. Inheritance might be complex for implementation, as well. So if not correctly implemented, this might lead to unexpected errors or incorrect outputs.
 
 26. What are the various types of inheritance?
+
+The various types of inheritance include:
+
+Single inheritance
+Multiple inheritances
+Multi-level inheritance
+Hierarchical inheritance
+Hybrid inheritance
+
+![image](https://user-images.githubusercontent.com/81725794/181693335-b611da36-4e92-4687-8f5c-7317097ec503.png)
+
+27. What is a subclass?
+
+The subclass is a part of Inheritance. The subclass is an entity, which inherits from another class. It is also known as the child class.
+
+28. Define a superclass?
+
+Superclass is also a part of Inheritance. The superclass is an entity, which allows subclasses or child classes to inherit from itself.
+
+![image](https://user-images.githubusercontent.com/81725794/181693392-d7304c65-1f48-4389-9d76-2167b1dd20a9.png)
+
+29. What is an interface?
+
+An interface refers to a special type of class, which contains methods, but not their definition. Only the declaration of methods is allowed inside an interface. To use an interface, you cannot create objects. Instead, you need to implement that interface and define the methods for their implementation. 
+
+30. What is meant by static polymorphism?
+
+Static Polymorphism is commonly known as the Compile time polymorphism. Static polymorphism is the feature by which an object is linked with the respective function or operator based on the values during the compile time. Static or Compile time Polymorphism can be achieved through Method overloading or operator overloading.
+
+31. What is meant by dynamic polymorphism?
+
+Dynamic Polymorphism or Runtime polymorphism refers to the type of Polymorphism in OOPs, by which the actual implementation of the function is decided during the runtime or execution. The dynamic or runtime polymorphism can be achieved with the help of method overriding.
+
+32. What is the difference between overloading and overriding?
