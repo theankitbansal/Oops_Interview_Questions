@@ -318,3 +318,18 @@ Static Polymorphism is commonly known as the Compile time polymorphism. Static p
 Dynamic Polymorphism or Runtime polymorphism refers to the type of Polymorphism in OOPs, by which the actual implementation of the function is decided during the runtime or execution. The dynamic or runtime polymorphism can be achieved with the help of method overriding.
 
 32. What is the difference between overloading and overriding?
+
+Overloading is a compile-time polymorphism feature in which an entity has multiple implementations with the same name. For example, Method overloading and Operator overloading.
+
+Whereas Overriding is a runtime polymorphism feature in which an entity has the same name, but its implementation changes during execution. For example, Method overriding.
+Image
+
+33. How is data abstraction accomplished?
+
+Data abstraction is accomplished with the help of abstract methods or abstract classes.
+
+34. What is an abstract class?
+
+An abstract class is a special class containing abstract methods. The significance of abstract class is that the abstract methods inside it are not implemented and only declared. So as a result, when a subclass inherits the abstract class and needs to use its abstract methods, they need to define and implement them.
+
+35. How is an abstract class different from an interface?
