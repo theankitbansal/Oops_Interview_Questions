@@ -90,3 +90,119 @@ An object refers to the instance of the class, which contains the instance of th
 For example, a specific car.
 
 11. What is encapsulation?
+
+![image](https://user-images.githubusercontent.com/81725794/181692037-7a24f077-2ae4-4bf9-a052-9b51973c53d8.png)
+
+One can visualize Encapsulation as the method of putting everything that is required to do the job, inside a capsule and presenting that capsule to the user. What it means is that by Encapsulation, all the necessary data and methods are bind together and all the unnecessary details are hidden to the normal user. So Encapsulation is the process of binding data members and methods of a program together to do a specific job, without revealing unnecessary details.
+
+Encapsulation can also be defined in two different ways:
+
+1) Data hiding: Encapsulation is the process of hiding unwanted information, such as restricting access to any member of an object.
+
+2) Data binding: Encapsulation is the process of binding the data members and the methods together as a whole, as a class.
+
+12. What is Polymorphism?
+
+Polymorphism is composed of two words - “poly” which means “many”, and “morph” which means “shapes”. Therefore Polymorphism refers to something that has many shapes.
+
+![image](https://user-images.githubusercontent.com/81725794/181692087-5fda9f82-7b31-41ea-9f0b-464e591d835d.png)
+
+In OOPs, Polymorphism refers to the process by which some code, data, method, or object behaves differently under different circumstances or contexts. Compile-time polymorphism and Run time polymorphism are the two types of polymorphisms in OOPs languages.
+
+13. What is Compile time Polymorphism and how is it different from Runtime Polymorphism?
+
+![image](https://user-images.githubusercontent.com/81725794/181692128-79175fb1-9f00-4064-bad1-93bd4705b0c7.png)
+
+Compile Time Polymorphism: Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture.
+
+Example:
+
+// In this program, we will see how multiple functions are created with the same name, 
+// but the compiler decides which function to call easily at the compile time itself.
+class CompileTimePolymorphism{
+   // 1st method with name add
+   public int add(int x, int y){ 
+   return x+y;
+   }
+   // 2nd method with name add
+   public int add(int x, int y, int z){
+   return x+y+z;
+   }
+   // 3rd method with name add
+   public int add(double x, int y){ 
+   return (int)x+y;
+   }
+   // 4th method with name add
+   public int add(int x, double y){ 
+   return x+(int)y;
+   }
+}
+class Test{
+   public static void main(String[] args){
+   CompileTimePolymorphism demo=new CompileTimePolymorphism();
+   // In the below statement, the Compiler looks at the argument types and decides to call method 1
+   System.out.println(demo.add(2,3));
+   // Similarly, in the below statement, the compiler calls method 2
+   System.out.println(demo.add(2,3,4));
+   // Similarly, in the below statement, the compiler calls method 4
+   System.out.println(demo.add(2,3.4));
+   // Similarly, in the below statement, the compiler calls method 3
+   System.out.println(demo.add(2.5,3)); 
+   }
+}
+
+In the above example, there are four versions of add methods. The first method takes two parameters while the second one takes three. For the third and fourth methods, there is a change of order of parameters. The compiler looks at the method signature and decides which method to invoke for a particular method call at compile time.
+
+Runtime Polymorphism: Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.
+
+Example:
+
+class AnyVehicle{
+   public void move(){
+   System.out.println(“Any vehicle should move!!”);
+   }
+}
+class Bike extends AnyVehicle{
+   public void move(){
+   System.out.println(“Bike can move too!!”);
+   }
+}
+class Test{
+   public static void main(String[] args){
+   AnyVehicle vehicle = new Bike();
+   // In the above statement, as you can see, the object vehicle is of type AnyVehicle
+   // But the output of the below statement will be “Bike can move too!!”, 
+   // because the actual implementation of object ‘vehicle’ is decided during runtime vehicle.move();
+   vehicle = new AnyVehicle();
+   // Now, the output of the below statement will be “Any vehicle should move!!”, 
+   vehicle.move();
+   }
+}
+
+As the method to call is determined at runtime, as shown in the above code, this is called runtime polymorphism. 
+
+14. How does C++ support Polymorphism?
+
+C++ is an Object-oriented programming language and it supports Polymorphism as well:
+
+Compile Time Polymorphism: C++ supports compile-time polymorphism with the help of features like templates, function overloading, and default arguments.
+Runtime Polymorphism: C++ supports Runtime polymorphism with the help of features like virtual functions. Virtual functions take the shape of the functions based on the type of object in reference and are resolved at runtime.
+
+15. What is meant by Inheritance?
+
+The term “inheritance” means “receiving some quality or behavior from a parent to an offspring.” In object-oriented programming, inheritance is the mechanism by which an object or class (referred to as a child) is created using the definition of another object or class (referred to as a parent). Inheritance not only helps to keep the implementation simpler but also helps to facilitate code reuse.
+
+16. What is Abstraction?
+
+If you are a user, and you have a problem statement, you don't want to know how the components of the software work, or how it's made. You only want to know how the software solves your problem. Abstraction is the method of hiding unnecessary details from the necessary ones. It is one of the main features of OOPs. 
+For example, consider a car. You only need to know how to run a car, and not how the wires are connected inside it. This is obtained using Abstraction.
+
+17. How much memory does a class occupy?
+
+Classes do not consume any memory. They are just a blueprint based on which objects are created. Now when objects are created, they actually initialize the class members and methods and therefore consume memory.
+
+18. Is it always necessary to create objects from class?
+
+No. An object is necessary to be created if the base class has non-static methods. But if the class has static methods, then objects don’t need to be created. You can call the class method directly in this case, using the class name.
+
+19. What is a constructor?
