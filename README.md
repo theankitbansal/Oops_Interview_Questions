@@ -206,3 +206,58 @@ Classes do not consume any memory. They are just a blueprint based on which obje
 No. An object is necessary to be created if the base class has non-static methods. But if the class has static methods, then objects don’t need to be created. You can call the class method directly in this case, using the class name.
 
 19. What is a constructor?
+
+Constructors are special methods whose name is the same as the class name. The constructors serve the special purpose of initializing the objects.
+For example, suppose there is a class with the name “MyClass”, then when you instantiate this class, you pass the syntax:
+MyClass myClassObject = new MyClass();
+
+Now here, the method called after “new” keyword - MyClass(), is the constructor of this class. This will help to instantiate the member data and methods and assign them to the object myClassObject.
+
+![image](https://user-images.githubusercontent.com/81725794/181692832-079dabdb-1294-4cf8-831f-cec780ddf30b.png)
+
+20. What are the various types of constructors in C++?
+
+The most common classification of constructors includes:
+
+Default constructor: The default constructor is the constructor which doesn’t take any argument. It has no parameters.
+
+class ABC
+{
+   int x;
+      
+   ABC()
+   {
+       x = 0;
+   }
+}
+Parameterized constructor: The constructors that take some arguments are known as parameterized constructors.
+
+class ABC
+{
+   int x;
+      
+   ABC(int y)
+   {
+       x = y;
+   }
+}
+Copy constructor: A copy constructor is a member function that initializes an object using another object of the same class.
+
+class ABC
+{
+   int x;
+      
+   ABC(int y)
+   {
+       x = y;
+   }
+   // Copy constructor
+   ABC(ABC abc)
+   {
+       x = abc.x;
+   }
+}
+
+21. What is a copy constructor?
+
+Copy Constructor is a type of constructor, whose purpose is to copy an object to another. What it means is that a copy constructor will clone an object and its values, into another object, is provided that both the objects are of the same class.
