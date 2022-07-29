@@ -333,3 +333,32 @@ Data abstraction is accomplished with the help of abstract methods or abstract c
 An abstract class is a special class containing abstract methods. The significance of abstract class is that the abstract methods inside it are not implemented and only declared. So as a result, when a subclass inherits the abstract class and needs to use its abstract methods, they need to define and implement them.
 
 35. How is an abstract class different from an interface?
+
+Interface and abstract class both are special types of classes that contain only the methods declaration and not their implementation. But the interface is entirely different from an abstract class. The main difference between the two is that, when an interface is implemented, the subclass must define all its methods and provide its implementation. Whereas when an abstract class is inherited, the subclass does not need to provide the definition of its abstract method, until and unless the subclass is using it.
+
+Also, an abstract class can contain abstract methods as well as non-abstract methods.
+
+36. What are access specifiers and what is their significance?
+
+Access specifiers, as the name suggests, are a special type of keywords, which are used to control or specify the accessibility of entities like classes, methods, etc. Some of the access specifiers or access modifiers include “private”, “public”, etc. These access specifiers also play a very vital role in achieving Encapsulation - one of the major features of OOPs.
+
+37. What is an exception?
+
+An exception can be considered as a special event, which is raised during the execution of a program at runtime, that brings the execution to a halt. The reason for the exception is mainly due to a position in the program, where the user wants to do something for which the program is not specified, like undesirable input.
+
+38. What is meant by exception handling?
+
+No one wants its software to fail or crash. Exceptions are the major reason for software failure. The exceptions can be handled in the program beforehand and prevent the execution from stopping. This is known as exception handling.
+So exception handling is the mechanism for identifying the undesirable states that the program can reach and specifying the desirable outcomes of such states.
+Try-catch is the most common method used for handling exceptions in the program.
+
+39. What is meant by Garbage Collection in OOPs world?
+Object-oriented programming revolves around entities like objects. Each object consumes memory and there can be multiple objects of a class. So if these objects and their memories are not handled properly, then it might lead to certain memory-related errors and the system might fail.
+
+Garbage collection refers to this mechanism of handling the memory in the program. Through garbage collection, the unwanted memory is freed up by removing the objects that are no longer needed.
+
+40. Can we run a Java application without implementing the OOPs concept?
+
+No. Java applications are based on Object-oriented programming models or OOPs concept, and hence they cannot be implemented without it.
+
+However, on the other hand, C++ can be implemented without OOPs, as it also supports the C-like structural programming model.
